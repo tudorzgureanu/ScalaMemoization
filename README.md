@@ -4,11 +4,11 @@ Provides a simple (read as primitive) memoization functionality. For education p
 #### How to use it:
 
 - Build and publish the artifact into your local repository.
-- Use the resulted artifact in your SBT project.
+- Use the resulted artifact in your SBT project:
 
 `libraryDependencies += "com.ted.tools" %% "scala-memoization" % "0.1-SNAPSHOT"`
 
-- You need also to add macro paradise compiler plugin for the scala version you are using (i.e. 2.11.7).
+- You need also to add macro paradise compiler plugin for the scala version you are using (i.e. 2.11.7):
 
 `addCompilerPlugin("org.scalamacros" % "paradise_2.11.7" % "2.1.0")`
 
@@ -16,7 +16,7 @@ Provides a simple (read as primitive) memoization functionality. For education p
 
 #### Example
 ```
-@memo
+    @memo
     def fibonacci(n: Int): Int = n match {
       case 0 | 1 => n
       case _ => fibonacci(n - 1) + fibonacci(n - 2)
