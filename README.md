@@ -6,7 +6,7 @@ Provides a simple (read as primitive) memoization functionality. For education p
 - Build and publish the artifact into your local repository.
 - Use the resulted artifact in your SBT project:
 
-`libraryDependencies += "com.ted.tools" %% "scala-memoization" % "0.1-SNAPSHOT"`
+`libraryDependencies += "com.ted.tools" %% "scala-memoization" % "0.1.0-SNAPSHOT"`
 
 - You need also to add macro paradise compiler plugin for the scala version you are using (i.e. 2.11.7):
 
