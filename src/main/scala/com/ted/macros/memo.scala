@@ -4,9 +4,6 @@ import scala.annotation.StaticAnnotation
 import scala.language.experimental.macros
 import scala.reflect.macros.whitebox.Context
 
-/**
-  * Created by refrigerator on 21.11.2015.
-  */
 class memo extends StaticAnnotation {
   def macroTransform(annottees: Any*): Any = macro memoMacro.impl
 }
